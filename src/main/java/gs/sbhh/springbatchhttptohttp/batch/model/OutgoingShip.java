@@ -17,4 +17,13 @@ public class OutgoingShip {
     private int emptyWeight;
     private int maxWeight;
     private int deadWeight;
+
+    public void print() {
+        System.out.println("Reg Id         " + regId);
+        System.out.println("Name           " + name);
+        System.out.println("Classification " + classification);
+        System.out.println("Empty Weight   " + emptyWeight);
+        System.out.println("Max Weight     " + maxWeight);
+        System.out.println("Dead Weight    " + deadWeight);
+    }
 }

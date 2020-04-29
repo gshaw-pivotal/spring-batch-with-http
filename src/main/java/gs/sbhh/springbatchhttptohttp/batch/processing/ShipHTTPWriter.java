@@ -19,6 +19,6 @@ public class ShipHTTPWriter implements ItemWriter<OutgoingShip> {
 
     @Override
     public void write(List<? extends OutgoingShip> list) throws Exception {
-        restTemplate.postForEntity(baseUrl + "/ship", list, OutgoingShip.class);
+        restTemplate.postForEntity(baseUrl + "/ship", list, null);
     }
 }
